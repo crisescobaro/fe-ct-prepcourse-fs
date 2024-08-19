@@ -7,4 +7,5 @@ const obtenerValorPropiedad = (objeto, propiedad) => {
    return a;
 };
 
+
 module.exports = obtenerValorPropiedad;

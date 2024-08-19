@@ -1,4 +1,4 @@
-![HenryLogo](../assets/logoBannerHenry.png)
+<![HenryLogo](../assets/logoBannerHenry.png)
 
 # **HOMEWORK 04 | CSS**
 

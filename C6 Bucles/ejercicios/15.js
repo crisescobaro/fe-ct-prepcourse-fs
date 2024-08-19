@@ -6,6 +6,33 @@ function obtenerDiaSemana(numero) {
   // Si el número no corresponde a un día de la semana, retorna
   // el string "No es un dia de la semana"
   // Tu código:
+  let dia;
+  switch(numero){
+    case 1:
+      dia = "Lunes";
+      break;
+      case 2:
+      dia = "Martes";
+      break;
+      case 3:
+      dia = "Miercoles"   
+      break;
+      case 4: 
+      dia = "Jueves"
+      break;
+      case 5: 
+      dia = "Viernes"
+      break;
+      case 6:
+      dia = "Sabado"
+      break;
+      case 7:
+      dia = "Domingo"
+      break;
+      default:
+      return "No es un dia de la semana"
+  }
+  return dia;
 }
 
 module.exports = obtenerDiaSemana;

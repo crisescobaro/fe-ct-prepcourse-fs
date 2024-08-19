@@ -5,6 +5,15 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  let esEntero = false;
+  let i = 0;
+while (i < 1) {
+  if (num % 1 === 0) {
+    esEntero = true;
+  }
+  i++;
+}
+return esEntero;
 }
 
 module.exports = esEntero;
