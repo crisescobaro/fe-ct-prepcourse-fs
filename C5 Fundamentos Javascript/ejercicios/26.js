@@ -4,7 +4,9 @@ function obtenerSaludo(nombre) {
   // Ejemplo: "Martin" ---> "Hola Martin!"
   // Retorna el nuevo string. 
   // Tu código:
-  let newtexr = nombre + " " + 'escobar!'
+  let saludo = "Hola " + nombre + "!";
+  return saludo;
 }
+
 
 module.exports = obtenerSaludo;

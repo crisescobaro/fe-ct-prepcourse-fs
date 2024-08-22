@@ -7,13 +7,19 @@ function productoEntreNúmeros(a, b) {
     a = b;
     b = temp;
   }
-  let producto = 1;
-  let i = a;
-  while (i <= b) {
-    producto *= i;
-    i++;
+  
+  
+  if (a <= 0 && b >= 0) {
+    return 0;
   }
+  
+  let producto = 1;
+  for (let i = a; i <= b; i++) {
+    producto *= i;
+  }
+  
   return producto;
 }
+
 
 module.exports = productoEntreNúmeros;

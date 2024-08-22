@@ -15,15 +15,20 @@ function numberOfCharacters(string) {
   // Las letras deben estar en orden alfabético.
   // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
   // Tu código:
-  let letrasEnmayus = {};
-  for(let i = 0; i < string.length; i++) {
-    let letras = string[i];
-    letrasEnmayus[letras] = (letrasEnmayus[letras] || 0 ) + 1;
+  let letrasEnMayus = {};
+  
+  for (let i = 0; i < string.length; i++) {
+    let letra = string[i];
+    letrasEnMayus[letra] = (letrasEnMayus[letra] || 0) + 1;
   }
-  let sortYentries = Object.entries(letrasEnmayus).sort((a,b) => a[0].localeCompare(b[0]));
-  return Object.entries(sortYentries);
-}
+ let letrasOrdenadas = Object.keys(letrasEnMayus).sort();
+  let resultado = {};
+  for (let letra of letrasOrdenadas) {
+    resultado[letra] = letrasEnMayus[letra];
+  }
 
+  return resultado;
+}
 function capToFront(string) {
   // Recibes un string con algunas letras en mayúscula y otras en minúscula.
   // Debes enviar todas las letras en mayúscula al comienzo del string.
@@ -55,10 +60,10 @@ function capicua(numero) {
   // Tu código:
   let xnumero = numero.toString();
   let xletras = xnumero.split('').reverse().join('');
-  if(xnumero === xletras){
-    return 'es capicua';
+  if (xnumero === xletras) {
+    return 'Es capicua'; 
   } else {
-    return 'no es capicua';
+    return 'No es capicua'; 
   }
 }
 
